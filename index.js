@@ -142,6 +142,6 @@ midiDiv.style.border = '2px solid #E17052';
 // midiDiv.style.background = '#F3F9FA';
 }}
 
-console.log("hello world");
+
 
 /// 
