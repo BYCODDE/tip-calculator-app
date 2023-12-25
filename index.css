@@ -2,7 +2,9 @@ body {
   background-color: #c5e4e7;
 
   display: flex;
-  padding: 163px 260px 239px 260px;
+  /* padding: 163px 260px 239px 260px;
+   */
+   padding: 20px;
   flex-direction: column;
   align-items: center;
  gap: 26.864px
@@ -26,6 +28,9 @@ body {
   border-radius: 25px;
   background: #fff;
   box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+  
+    overflow: hidden !important;
+  
 }
 
 .bill {
@@ -238,7 +243,7 @@ height: auto;
     width: 100%;
     padding: 6% 0;
  font-size: 18px;
-/} 
+} 
 
 
 .input1,
@@ -252,18 +257,32 @@ height: auto;
  } 
 
 
- .buttons {
-    flex-direction: column;
-} 
+ /* .buttons {
+    /* flex-direction: column; */
+}  
 
 .Select-Tip {
     margin: 20px 0; 
 } 
- } 
+
+.mainsvg{
+  margin-left:250px;
+}
+ 
+
+ @media screen and (max-width:600px) {
+  .mainsvg{
+    margin-left:210px;
+  }
+ }
+
+
+
+
 
 .Number-error{
   color: #E17457;
-  /* text-align: right; */
+  
   font-family: Space Mono;
   font-size: 16px;
   font-weight: 700;

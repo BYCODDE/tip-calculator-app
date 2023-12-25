@@ -11,7 +11,6 @@ const midiDiv = document.querySelector("#mini-div");
 let save = "";
 tipAmountValue.innerHTML = "$0";
 totalValue.innerHTML = "$0";
-///Reset butn functionality to reset all values!
 
 btnReset.addEventListener("click", (event) => {
   billInput.value = "";
@@ -20,13 +19,10 @@ btnReset.addEventListener("click", (event) => {
   tipAmountValue.innerHTML = "$0";
   totalValue.innerHTML = "$0";
 
-  //Reset the tip percentage btns
-
   selectTipBtns.forEach((tipBtn) => {
     tipBtn.classList.remove("active");
   });
 });
-//Make the tip percentage butns clickable
 
 selectTipBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
@@ -44,14 +40,11 @@ selectTipBtns.forEach((btn) => {
       save = numberInner;
       tipPercentage();
       totalAmount();
-      fixNumbers()
-
+      fixNumbers();
     }
     chosenTip();
   });
 });
-
-//Make the custom percentage butn clickable
 
 customTipInput.addEventListener("input", () => {
   if (customTipInput.value) {
@@ -65,8 +58,7 @@ customTipInput.addEventListener("input", () => {
   save = Number(customTipInput.value) / 100;
   tipPercentage();
   totalAmount();
-  fixNumbers()
-
+  fixNumbers();
 });
 
 const tipPercentage = function () {
@@ -83,15 +75,14 @@ const tipPercentage = function () {
 billInput.addEventListener("input", (event) => {
   tipPercentage();
   totalAmount();
-  fixNumbers()
-  
+  fixNumbers();
 });
 
 numberOfPeopleInput.addEventListener("input", (event) => {
   tipPercentage();
   totalAmount();
-  fixNumbers()
-  cantBeZero()
+  fixNumbers();
+  cantBeZero();
 });
 
 const totalAmount = function () {
@@ -104,29 +95,17 @@ const totalAmount = function () {
 
 const fixNumbers = function () {
   if (billInput.value.length >= 6 && numberOfPeopleInput.value.length >= 1) {
-    
-    tipAmountValue.style.fontSize= "36px";
-    totalValue.style.fontSize= "36px";
-   
-  }
-  else{
-    tipAmountValue.style.fontSize= "48px";
-    totalValue.style.fontSize= "48px";
+    tipAmountValue.style.fontSize = "36px";
+    totalValue.style.fontSize = "36px";
+  } else {
+    tipAmountValue.style.fontSize = "48px";
+    totalValue.style.fontSize = "48px";
   }
 };
 
-// const cantBeZero = function () {
-//   if (numberOfPeopleInput.value === 0) {
-//     const zeroSpan = document.createElement("span");
-//     zeroSpan.innerHTML = "can't be zero";
-//     zeroSpan.classList.add("Number-error");
-//     noZero.appendChild(zeroSpan);
-//   }
-// }
 const cantBeZero = function () {
   const existingZeroSpan = document.querySelector(".Number-error");
-  
-  // Remove existing zeroSpan if it exists
+
   if (existingZeroSpan) {
     existingZeroSpan.remove();
   }
@@ -137,11 +116,19 @@ const cantBeZero = function () {
     zeroSpan.classList.add("Number-error");
     noZero.appendChild(zeroSpan);
 
-// midiDiv.style.borderRadius = '5px';
-midiDiv.style.border = '2px solid #E17052';
-// midiDiv.style.background = '#F3F9FA';
-}}
+    midiDiv.style.border = "2px solid #E17052";
+  }
+  else{
+    midiDiv.style.border ="2px solid #26c2ae";
+  }
+};
+
+////////////////////////////////////////////////////////
 
 
+// resetis mere procentis tema ar nuldeba
 
-/// 
+// kursoris mitanaze simahle ar sheicvalos
+
+// responsivi gavasworo figmis mixedvit
+
