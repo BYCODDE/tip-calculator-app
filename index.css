@@ -206,20 +206,46 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 768px) {
   body {
-    padding: 5%;
+    /* display: flex; */
+    /* width: 375px; */
+    padding-top: 50px;
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    gap: 40.864px;
+    height: 375px
   }
-
+  .right_main{
+    margin-bottom: 20px;
+  }
+  .mini-buttons{
+    width: 146.631px;
+    font-size: 24px;
+  }
+  #custom_button{
+    width: 146.631px;
+    font-size: 24px;
+  }
+  #tip_total,
+  #total {
+    font-size: 32px;
+  }
+  .mainsvg {
+    margin-left: 305px
+  }
   .container {
-    width: 90%;
-    padding: 10% 5%;
     flex-direction: column;
+    width: 375px;
+    padding: 0;
+    border-radius: 25px 25px 0px 0px;
+    height: auto;
   }
 
   .bill,
   .mini-div,
   .buttons {
     width: 100%;
-    padding: 8% 5%;
+    /* padding: 8% 5%; */
   }
 
   .header {
@@ -228,9 +254,10 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .right {
-    width: 90%;
+    
     padding: 5%;
-    margin-top: 20px;
+    width: 327px;
+    margin-left: 23px 
   }
 
   .reset {
@@ -239,27 +266,29 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 18px;
   }
 
-  .input1,
+  /* .input1,
   .mini-buttons,
-  #custom_button,
-  .total_h3,
-  span,
-  #total,
-  #tip_total {
-    font-size: 15px;
-  }
+  /* #custom_button, */
+  /* .total_h3, */
+  /* span, */
+  /* #total, */
+   /* { */
+    /* font-size: 15px; */
+  /* } */ 
 
   /* .buttons {
     /* flex-direction: column; */
+/* } */
+.input1{
+  font-size:  20px;;
 }
-
 .Select-Tip {
   margin: 20px 0;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 650px) {
   .mainsvg {
-    margin-left: 210px;
+    margin-left: 135px 
   }
 }
 
@@ -270,4 +299,5 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 16px;
   font-weight: 700;
   padding-left: 20px;
+} */
 }

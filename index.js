@@ -25,7 +25,7 @@ btnReset.addEventListener("click", (event) => {
   });
   save = "";
 
-  // Recalculate and reset UI
+  
   tipPercentage();
   totalAmount();
   fixNumbers();
