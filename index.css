@@ -1,13 +1,10 @@
 body {
   background-color: #c5e4e7;
-
   display: flex;
-  /* padding: 163px 260px 239px 260px;
-   */
-   padding: 20px;
+  padding: 20px;
   flex-direction: column;
   align-items: center;
- gap: 26.864px
+  gap: 26.864px;
 }
 
 .header {
@@ -28,9 +25,7 @@ body {
   border-radius: 25px;
   background: #fff;
   box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
-  
-    overflow: hidden !important;
-  
+ 
 }
 
 .bill {
@@ -182,10 +177,11 @@ span {
 }
 
 .mini-div:hover {
-  border: 2px solid #26c2ae;
-  background: #f3f9fa;
+  background: #f3f9fa; 
+  padding: 6px 18px; 
+ 
+  outline: 2px solid #26c2ae; 
 }
-
 #custom_button:hover {
   border-radius: 5px;
   border: 2px solid #26c2ae;
@@ -208,8 +204,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-
- 
 @media screen and (max-width: 768px) {
   body {
     padding: 5%;
@@ -218,73 +212,62 @@ input[type="number"]::-webkit-outer-spin-button {
   .container {
     width: 90%;
     padding: 10% 5%;
-    flex-direction: column; 
-}
+    flex-direction: column;
+  }
 
   .bill,
   .mini-div,
   .buttons {
-    width: 100%; 
- padding: 8% 5%; 
- } 
+    width: 100%;
+    padding: 8% 5%;
+  }
 
-.header {
-  width: 100%;  
-height: auto;
- } 
+  .header {
+    width: 100%;
+    height: auto;
+  }
 
   .right {
     width: 90%;
     padding: 5%;
-    margin-top: 20px; 
- }
+    margin-top: 20px;
+  }
 
   .reset {
     width: 100%;
     padding: 6% 0;
- font-size: 18px;
-} 
+    font-size: 18px;
+  }
 
-
-.input1,
+  .input1,
   .mini-buttons,
   #custom_button,
   .total_h3,
   span,
   #total,
   #tip_total {
-    font-size: 15px; 
- } 
+    font-size: 15px;
+  }
 
-
- /* .buttons {
+  /* .buttons {
     /* flex-direction: column; */
-}  
+}
 
 .Select-Tip {
-    margin: 20px 0; 
-} 
-
-.mainsvg{
-  margin-left:250px;
+  margin: 20px 0;
 }
- 
 
- @media screen and (max-width:600px) {
-  .mainsvg{
-    margin-left:210px;
+@media screen and (max-width: 600px) {
+  .mainsvg {
+    margin-left: 210px;
   }
- }
+}
 
+.Number-error {
+  color: #e17457;
 
-
-
-
-.Number-error{
-  color: #E17457;
-  
   font-family: Space Mono;
   font-size: 16px;
   font-weight: 700;
-  padding-left: 20px
+  padding-left: 20px;
 }

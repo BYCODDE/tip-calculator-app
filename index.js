@@ -21,7 +21,16 @@ btnReset.addEventListener("click", (event) => {
 
   selectTipBtns.forEach((tipBtn) => {
     tipBtn.classList.remove("active");
+    
   });
+  save = "";
+
+  // Recalculate and reset UI
+  tipPercentage();
+  totalAmount();
+  fixNumbers();
+  cantBeZero();
+
 });
 
 selectTipBtns.forEach((btn) => {
@@ -116,19 +125,9 @@ const cantBeZero = function () {
     zeroSpan.classList.add("Number-error");
     noZero.appendChild(zeroSpan);
 
-    midiDiv.style.border = "2px solid #E17052";
+    midiDiv.style.outline = "2px solid #E17052";
   }
   else{
-    midiDiv.style.border ="2px solid #26c2ae";
+    midiDiv.style.outline ="2px solid #26c2ae";
   }
 };
-
-////////////////////////////////////////////////////////
-
-
-// resetis mere procentis tema ar nuldeba
-
-// kursoris mitanaze simahle ar sheicvalos
-
-// responsivi gavasworo figmis mixedvit
-
