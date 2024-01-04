@@ -127,7 +127,7 @@ const cantBeZero = function () {
     save = "";
     midiDiv.style.outline = "2px solid #E17052";
   }
-  if(numberOfPeopleInput.value === ""){
+  else if(numberOfPeopleInput.value === ""){
     totalValue.innerHTML = "$0";
     tipAmountValue.innerHTML = "$0";
   }
