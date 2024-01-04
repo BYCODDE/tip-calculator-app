@@ -8,6 +8,7 @@ const selectTipBtns = document.querySelectorAll(".mini-buttons");
 const right = document.querySelector(".right");
 const noZero = document.querySelector("#people");
 const midiDiv = document.querySelector("#mini-div");
+const forInputs = document.querySelector(".input1")
 let save = "";
 tipAmountValue.innerHTML = "$0";
 totalValue.innerHTML = "$0";
@@ -25,7 +26,6 @@ btnReset.addEventListener("click", (event) => {
   });
   save = "";
 
-  
   tipPercentage();
   totalAmount();
   fixNumbers();
@@ -130,6 +130,8 @@ const cantBeZero = function () {
   else if(numberOfPeopleInput.value === ""){
     totalValue.innerHTML = "$0";
     tipAmountValue.innerHTML = "$0";
+    midiDiv.style.outline ="none";
+
   }
   else{
     midiDiv.style.outline ="2px solid #26c2ae";
