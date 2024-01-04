@@ -124,8 +124,12 @@ const cantBeZero = function () {
     zeroSpan.innerHTML = "Can't be 0";
     zeroSpan.classList.add("Number-error");
     noZero.appendChild(zeroSpan);
-
+    save = "";
     midiDiv.style.outline = "2px solid #E17052";
+  }
+  if(numberOfPeopleInput.value === ""){
+    totalValue.innerHTML = "$0";
+    tipAmountValue.innerHTML = "$0";
   }
   else{
     midiDiv.style.outline ="2px solid #26c2ae";
